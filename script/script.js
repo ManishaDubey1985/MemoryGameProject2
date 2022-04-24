@@ -2,10 +2,20 @@
 availableImages=['Images/bean.jpg','Images/doraemon.jpg','Images/minion.jpg','Images/mouse.jpg','Images/noddy.jpg','Images/popeye.jpg',
 'Images/scooby.jpg','Images/shinchan.jpg','Images/bean.jpg','Images/doraemon.jpg','Images/minion.jpg','Images/mouse.jpg','Images/noddy.jpg',
 'Images/popeye.jpg','Images/scooby.jpg','Images/shinchan.jpg']
-
+// function to add sound effect on div click for boardgame
+function playaudio()
+{
+const maindiv = document.getElementById("boardgame"); 
+var audio = new Audio("DivClick.wav");
+if (maindiv.click = true)
+{
+   audio.play();
+}
+}
+// end of function
 function start(){
     let moves =0;
-    const maindiv = document.getElementById("boardgame");
+    const maindiv = document.getElementById("boardgame");   
     while (maindiv.firstChild) {
         maindiv.removeChild(maindiv.lastChild);
     }
