@@ -55,8 +55,11 @@ function start(){
                     currentlyshowing[i].classList.remove('showimg');
                     else{
                         currentlyshowing[i].classList.add('match');
+                        currentlyshowing[i].style.backgroundColor="pink";  // added backgound change effect once match
                         currImg.classList.add('match')
+                        currImg.style.backgroundColor="pink"; // added backgound change effect once match
                         flag=1;
+                        
                     }
                 }
             }
