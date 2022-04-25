@@ -6,7 +6,7 @@ availableImages=['Images/bean.jpg','Images/doraemon.jpg','Images/minion.jpg','Im
 function playaudio()
 {
 const maindiv = document.getElementById("boardgame"); 
-var audio = new Audio("DivClick.wav");
+var audio = new Audio("Media/DivClick.wav");
 if (maindiv.click = true)
 {
    audio.play();
