@@ -19,6 +19,14 @@
             background-attachment: fixed;
             background-size: cover;
         }
+        p{
+            color:aliceblue;
+            text-align: center;
+            font-size: 30px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -60,7 +68,15 @@
       </nav>
       <!-- end of nav bar -->
       <div class="container">
-          
+        <p>Memory game instructions:</p>
+        <p>It is easy to play a game and requires observation, concentration, and good memory to win.</p>
+        <!-- bootstrap classes reference: https://www.w3schools.com/bootstrap/bootstrap_list_groups.asp -->
+        <ol class="list-group" style="color: aliceblue;">
+            <li clas="list-group-item">1-2 players can play the game.</li>        
+            <li clas="list-group-item">The player must click on the grid and memorize it to match it with another picture.</li>
+            <li clas="list-group-item">Once matched, the matching grids will freeze and be outlined in a square ring.</li>
+            <li clas="list-group-item">When all the pictures match, the player will receive a winning message with the information of how many moves it took to win.</li>
+        </ol>
       </div>
 </body>
 </html>
