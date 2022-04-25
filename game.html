@@ -70,13 +70,28 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Game</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="quiz.html">Quiz</a>
-            </li>    
           </ul>
+          <!-- changes in nav bar to add dropdown -->
+        <!-- source: https://getbootstrap.com/docs/4.0/components/dropdowns/ -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Game
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="game.html">Play game</a>
+              <a class="dropdown-item" href="gameHow.html">How to play</a>
+            </div>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" style="margin-left:5px;;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Quiz
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               <a class="dropdown-item" href="quiz.html">Start Quiz</a>
+               <a class="dropdown-item" href="quizHow.html">How to play</a>
+            </div>
+        </div>
+        <!-- end of dropdown changes -->
         </div>  
       </nav>
       <!-- end of nav bar -->
