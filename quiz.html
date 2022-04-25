@@ -13,14 +13,91 @@
 
     <style>
         body {
-            background-image: url('Images/quizbackground.jpeg');
+            background-image: url('Images/quizbackground1.jpeg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
         }
+        /* code reference: https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/ */
+        .panel{
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .question-container{
+            margin: 10px;
+            padding: 5px;
+            width: 75vw;
+            height: 10vh;
+            background-color:azure;
+            font-size: x-large;
+            text-align: center;
+        }
+        .result{
+            margin: 10px;
+            padding: 5px;
+            width:75vw;
+            height: 10vh;
+            text-align: center;
+            font-size: 50px;
+        }
+        .option-container{
+            display: flex;
+            justify-content: space-around; 
+            margin: 10px;
+            padding: 5px;
+            width: 75vw;
+            height: 20vh;
+            background-color:mediumpurple;        
+        }
+        .option{    
+            padding: 10px;
+            width: 15vw;
+            height: 10vh;
+            font-size: larger;
+            background-color:lightskyblue;
+            border-radius: 25%;
+        }
+        .option:hover{
+            background-color: lightgoldenrodyellow;
+        }
+        .navigation{
+            width: 75vw;
+            height: 10vh;
+            margin: 10px;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+            background-color:azure;
+        }  
+        .evaluate,.next{
+            width:30vw;
+            height: 8vh;
+            padding: 5px;
+            font-size: larger;
+        }
+        .evaluate{
+            background-color:hotpink;
+        }
+        .next{
+            color: white;
+            background-color:dodgerblue;
+        }
+        /* end of source */
+        /* code added by MANISHA */
+        #column2{
+            font-family: fantasy;
+            font-weight: bold;
+            font-size: 50px; 
+            color:aliceblue;
+            text-align: center;
+            background-color:darkorchid;
+        }
     </style>
     <body>
-         <!-- source: https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse -->
+         <!-- source1: https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse -->
     <!-- the navbar collapses into dropdown menu when the screen size is small -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark" style="background-color: chocolate;">
         <a class="navbar-brand" style="color:aquamarine; font-family: cursive;" href="#">Fun Arena</a>
@@ -34,7 +111,7 @@
             </li>
           </ul>
           <!-- changes in nav bar to add dropdown -->
-        <!-- source: https://getbootstrap.com/docs/4.0/components/dropdowns/ -->
+        <!-- source2: https://getbootstrap.com/docs/4.0/components/dropdowns/ -->
         <div class="btn-group">
             <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Game
@@ -53,10 +130,36 @@
                <a class="dropdown-item" href="quizHow.html">How to play</a>
             </div>
         </div>
-        <!-- end of dropdown changes -->
+        <!-- source2: end of dropdown changes -->
         </div>  
       </nav>
-      <!-- end of nav bar -->
+      <!-- source1: end of nav bar -->
+      <div class="container">
+        <h1 class ="jumbotron" id="column2">The General Knowledge Quiz</h1>
+      </div>
+      <!-- source3: https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/ -->
+      <div class="panel">
+        <div class="result">
+  
+        </div>
+        <div class="question-container" id="question">
+            Question goes here.
+        </div>
+        <div class="option-container">
+            <button class="option" onclick="" id="op1" >option1</button>
+      
+            <button class="option" id="op2" >option2</button>
+      
+            <button class="option" id="op3">option3</button>
+      
+            <button class="option" id="op4">option4</button>
+        </div>
+        <div class="navigation">
+            <button class="evaluate">Evaluate</button>
+            <button class="next">Next</button>
+        </div>
+    </div>
+    <!-- end of source3 -->
     </body>
 </head>
 </html>
