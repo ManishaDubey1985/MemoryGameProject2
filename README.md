@@ -54,8 +54,14 @@ Evaluation of IQ level
       -	I've used GitHub as a remote repository to push and store the committed changes to my project from Git. I've also used GitHub pages to deploy my website in a live environment.
 
 ### Testing
--	Tested all the pages on different devices and working fine.
-
+-	Tested all the pages on different devices and functions and display working fine.
+## HTML Pages Validation
+-   HTML pages validated ussing  - https://validator.w3.org/#validate_by_input
+      - On quiz page found "stray end tag <head> error" and fixed it by enclosing it before the start of body tag.
+      - The two w3 validator errors unsolved are (common error on all the HTML pages):
+           - The aria-labelledby attribute must point to an element in the same document.
+           - attribute 0 is not serializable as xml 1.0.
+      - On index page error found "Duplicate ID subcontainer"
 ## Deployment
 
 The hosting platform that I've used for my project is GitHub Pages. To deploy my website to GitHub pages, I used the following steps:
