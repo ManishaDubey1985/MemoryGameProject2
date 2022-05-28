@@ -1,3 +1,4 @@
+// ------------------------------------------------ Game page Coding -------------------------------------------------------------------
 // code source: https://data-flair.training/blogs/flip-card-memory-game-in-javascript/
 availableImages=['Images/bean.jpg','Images/doraemon.jpg','Images/minion.jpg','Images/mouse.jpg','Images/noddy.jpg','Images/popeye.jpg',
 'Images/scooby.jpg','Images/shinchan.jpg','Images/bean.jpg','Images/doraemon.jpg','Images/minion.jpg','Images/mouse.jpg','Images/noddy.jpg',
@@ -76,5 +77,12 @@ function start(){
             if(flag==0)
             currImg.classList.add('showimg');
         })
+
     }
+    //  window.addEventListener('resize', (event) =>
+    //  {
+    // //     var width = $(window).width() - 25; 
+    // //     $(window).width(width);
+    
+    // })
 }

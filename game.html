@@ -10,54 +10,14 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-------------- end of bootstrap link --------------------------------------------------> 
     <title>The Memory game</title>
-    
-    <script src="script/script.js"></script>
-    <style>
-        .imgdiv{
-            position: relative;
-            display: inline-block;
-            width:150px;
-            height: 150px;
-            line-height: 150px;
-            font-size: 20px;
-            padding: 10px;
-            text-align: center;
-            border: 2px solid black;
-            cursor: pointer;
-        }
-        
-        img{
-            width:120px;
-            height: 120px;
-            padding: 10px;;
-        }
- 
-        .hide{
-            padding: 10px;
-            visibility: hidden;
-        }
- 
-        .match, .showimg{
-            visibility: visible !important;
-        }
-        body {
-            background-image: url('Images/gamebackground.jpeg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-        #column2{
-            font-family: fantasy;
-            font-weight: bold;
-            font-size: 50px; 
-            color:aliceblue;
-            text-align: center;
-            background-color:darkorchid;
-        }
-    </style>
+    <!---------------------- CSS file for designing added by me ----------------------------------->
+    <link rel="stylesheet" href="styles/style.css">
+    <!---------------------  end of css file ------------------------------------------------------>
+    <script src="script/gamescript.js"></script> 
 </head>
-<body>
+<body id="gameBackground">
     <!-- source: https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse -->
     <!-- the navbar collapses into dropdown menu when the screen size is small -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark" style="background-color: chocolate;">
@@ -98,9 +58,10 @@
     <div class="container">
         <h1 class ="jumbotron" id="column2">The Memory game</h1>
         <button class="btn btn-success" onclick="start()">Start game</button><br><br>
-  <div id="score"></div>
+    <div id="score"></div>
  <!-- onclick event added -->
-        <div id="boardgame" onclick="playaudio()"></div>
+    <div id="boardgame" onclick="playaudio()"></div>
     </div>   
+    
 </body>
 </html>

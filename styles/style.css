@@ -1,0 +1,215 @@
+@media (min-width: 576px) {
+    :root {
+      --size-divisor: 2;
+    }
+  }
+  @media (min-width: 768px) {
+    :root {
+      --size-divisor: 1.5;
+    }
+  }
+  @media (min-width: 992px) { 
+    :root {
+      --size-divisor: 1;
+    }
+  }
+  @media (min-width: 1200px) { 
+    :root {
+      --size-divisor: .67;
+    }
+  }
+          .imgdiv{
+              position: relative;
+              display: inline-block;
+              width:150px;
+              height: 150px;
+              line-height: 150px;
+              font-size: 20px;
+              padding: 10px;
+              text-align: center;
+              border: 2px solid black;
+              cursor: pointer;
+          }
+          
+          img{
+              width:120px;
+              height: 120px;
+              padding: 10px;;
+          }
+   
+          .hide{
+              padding: 10px;
+              visibility: hidden;
+          }
+   
+          .match, .showimg{
+              visibility: visible !important;
+          }
+          body {         
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+          }
+          #column2{
+              font-family: fantasy;
+              font-weight: bold;
+              font-size: 50px; 
+              color:aliceblue;
+              text-align: center;
+              background-color:darkorchid;
+          }
+          p{
+            color:aliceblue;
+            text-align: center;
+            font-size: 30px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        #gameBackground{
+            background-image: url('../Images/gamebackground.jpeg');
+        }
+        #quizBackgound{
+            background-image: url('../Images/quizbackground1.jpeg');
+        }
+        #indexBackground{
+            background-image: url('../Images/background.jpeg');
+        }
+         /* code reference: https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/ */
+        .panel{
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            }
+        .question-container{
+            margin: 10px;
+            padding: 5px;
+            width: 75vw;
+            height: 10vh;
+            background-color:azure;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            }
+        .result{
+            margin: 10px;
+            padding: 5px;
+            width:75vw;
+            height: 10vh;
+            text-align: center;
+            font-size: 50px;
+            }
+        .option-container{
+            display: flex;
+            justify-content: space-around; 
+            margin: 10px;
+            padding: 5px;
+            width: 75vw;
+            height: 20vh;
+            background-color:mediumpurple;        
+            }
+        .option{    
+            padding: 10px;
+            width: 15vw;
+            height: 10vh;
+                    text-align: center;
+                    font-size: 13.5px;
+                    font-weight: bold;   
+                    font-family: 'Times New Roman', Times, serif;       
+                    background-color:lightskyblue;
+                    border-radius: 25%;
+                }
+                .option:hover{
+                    background-color: lightgoldenrodyellow;
+                }
+                .navigation{
+                    width: 75vw;
+                    height: 10vh;
+                    margin: 10px;
+                    padding: 5px;
+                    display: flex;
+                    justify-content: space-around;
+                    background-color:azure;
+                }  
+                .evaluate,.next,.previous{
+                    width:20vw;
+                    height: 8vh;
+                    padding: 5px;
+                    font-size: larger;
+                }
+                .evaluate{
+                    background-color:hotpink;
+                }
+                .next{
+                    color: white;
+                    background-color:dodgerblue;
+                }
+                .previous
+                {
+                    color: white;
+                    background-color:dodgerblue;
+                }
+                /* end of source */
+                /* code added by MANISHA */
+                #column2{
+                    font-family: fantasy;
+                    font-weight: bold;
+                    font-size: 50px; 
+                    color:aliceblue;
+                    text-align: center;
+                    background-color:darkorchid;
+                }
+                #op1{
+                    max-width: 100%;
+                    
+                }
+                #op2{
+                    max-width: 100%;
+                }
+                #op3{
+                    max-width: 100%;
+                }
+                #op4{
+                    max-width: 100%;
+                }
+                #headerText
+                {
+                    text-align: center;
+                    font-family:cursive;
+                    font-size:100px;
+                    font-weight: bold;
+                    color:aliceblue;
+                    background-color:darkorchid;
+                    /* background-image: url("Images/Gaming.jpeg");
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size: cover; */
+                }
+                #column3{
+                    font-family: fantasy;
+                    font-weight: bold;
+                    font-size: 50px; 
+                    color:aliceblue;
+                    text-align: center;
+                }
+                #subcontainer
+                {
+                    color:aliceblue; 
+                    background-color:darkorchid;
+                    font-size: 50px;
+                    font-family: 'Times New Roman', Times, serif;
+                    text-align: center;
+                    cursor: pointer;           
+                    
+                }
+                /* hover effect code source: https://stackoverflow.com/questions/36410627/how-to-put-bootstrap-glow-used-in-the-form-control-css-class-on-a-div */
+                #subcontainer:hover{
+                    border-color:  rgba(82, 236, 113, 0.8);
+                    box-shadow: 0 3px 3px rgba(82, 236, 113, 0.8) inset, 0 0 8px rgba(82, 236, 113, 0.8);
+                    outline: 0 none;
+                }
+
+    
