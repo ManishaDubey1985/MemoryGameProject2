@@ -179,14 +179,12 @@ op4.addEventListener("click", () => {
 
 // Grabbing the evaluate button
 let finalvalue = 0;
-console.log("The value initiatied is ",finalvalue)
 const evaluate = document.getElementsByClassName("evaluate");
 // Evaluate method
 evaluate[0].addEventListener("click", () => {
     if (selected == "true") {
         result[0].innerHTML = "True";
         result[0].style.color = "white";
-        finalvalue++;
         
     } else {
         result[0].innerHTML = "False";
@@ -208,35 +206,10 @@ if (id < 9) {
     id++;
     iterate(id);
     console.log(id);
+    document.querySelector('.next').disabled = false;
 }
 else if (id == 9) {
-    console.log("value is" + finalvalue);
-    document.querySelector('.next').innerText = "Finish";
-    var resultText = document.getElementsByClassName('result');
-    resultText[0].innerText = "";
-    if (finalvalue > 9)
-    {
-        resultText[0].innerHTML = "Your IQ level is high.";
-        resultText[0].style.color = "white";
-    }
-    else if (finalvalue < 9 || finalvalue >= 7)
-    {
-        resultText[0].innerHTML = "Your IQ level is good.";
-        resultText[0].style.color = "white";
-    }
-    else if (finalvalue < 7 || finalvalue >= 5)
-    {
-        resultText[0].innerHTML = "Your IQ level is average.";
-        resultText[0].style.color = "white";
-    }
-    else
-    {
-        resultText[0].innerHTML = "Your IQ level is below average.";
-        resultText[0].style.color = "white";
-    }
-    document.querySelector('.next').innerText = "Next";
-    iterate("0");
-    finalvalue = 0;
+    document.querySelector('.next').disabled = true;
 }
 if (id >= 1){
     document.getElementById("prev").disabled = false;
@@ -248,6 +221,7 @@ const previous = document.getElementsByClassName('previous');
 previous[0].addEventListener("click", () => {
 if (id < 9 || id >= 1) {
     document.getElementById("prev").disabled = false;
+    document.querySelector('.next').disabled = false;
     id--;
     iterate(id);
     console.log(id);
@@ -255,5 +229,7 @@ if (id < 9 || id >= 1) {
 if (id == 0 || id <= 0)
 {
     document.getElementById("prev").disabled = true;
+    document.querySelector('.next').disabled = false;
 }
 })
+// ------------------ end of previous button coding ----------------------------

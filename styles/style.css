@@ -1,24 +1,4 @@
-@media (min-width: 576px) {
-    :root {
-      --size-divisor: 2;
-    }
-  }
-  @media (min-width: 768px) {
-    :root {
-      --size-divisor: 1.5;
-    }
-  }
-  @media (min-width: 992px) { 
-    :root {
-      --size-divisor: 1;
-    }
-  }
-  @media (min-width: 1200px) { 
-    :root {
-      --size-divisor: .67;
-    }
-  }
-          .imgdiv{
+     .imgdiv{
               position: relative;
               display: inline-block;
               width:150px;
@@ -115,101 +95,122 @@
             padding: 10px;
             width: 15vw;
             height: 10vh;
-                    text-align: center;
-                    font-size: 13.5px;
-                    font-weight: bold;   
-                    font-family: 'Times New Roman', Times, serif;       
-                    background-color:lightskyblue;
-                    border-radius: 25%;
+            text-align: center;
+            font-size: 14.2px;
+            font-weight: bold;   
+            font-family: 'Times New Roman', Times, serif;       
+            background-color:lightskyblue;
+            border-radius: 25%;
                 }
-                .option:hover{
-                    background-color: lightgoldenrodyellow;
+        .option:hover{
+            background-color: lightgoldenrodyellow;
                 }
-                .navigation{
-                    width: 75vw;
-                    height: 10vh;
-                    margin: 10px;
-                    padding: 5px;
-                    display: flex;
-                    justify-content: space-around;
-                    background-color:azure;
+       .navigation{
+            width: 75vw;
+            height: 10vh;
+            margin: 10px;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+            background-color:azure;
                 }  
-                .evaluate,.next,.previous{
-                    width:20vw;
-                    height: 8vh;
-                    padding: 5px;
-                    font-size: larger;
+        .evaluate,.next,.previous{
+             width:20vw;
+            height: 8vh;
+            padding: 5px;
+            font-size: larger;
                 }
-                .evaluate{
-                    background-color:hotpink;
+        .evaluate{
+            background-color:hotpink;
                 }
-                .next{
-                    color: white;
-                    background-color:dodgerblue;
+        .next{
+            color: white;
+            background-color:dodgerblue;
+            }
+        .previous
+            {
+            color: white;
+            background-color:dodgerblue;
+            }
+    /* end of source */
+    /* code added by MANISHA */
+        #column2{
+            font-family: fantasy;
+            font-weight: bold;
+            font-size: 50px; 
+            color:aliceblue;
+            text-align: center;
+            background-color:darkorchid;
                 }
-                .previous
+        #op1{
+            max-width: 100%;
+            }
+        #op2{
+            max-width: 100%;
+            }
+        #op3{
+            max-width: 100%;
+            }
+        #op4{
+            max-width: 100%;
+            }
+        #headerText
+            {
+            text-align: center;
+            font-family:cursive;
+            font-size:100px;
+            font-weight: bold;
+            color:aliceblue;
+            background-color:darkorchid;
+            /* background-image: url("Images/Gaming.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover; */
+            }
+        #column3{
+            font-family: fantasy;
+            font-weight: bold;
+            font-size: 50px; 
+            color:aliceblue;
+            text-align: center;
+                }
+        #subcontainer
                 {
-                    color: white;
-                    background-color:dodgerblue;
+            color:aliceblue; 
+            background-color:darkorchid;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            cursor: pointer;           
                 }
-                /* end of source */
-                /* code added by MANISHA */
-                #column2{
-                    font-family: fantasy;
-                    font-weight: bold;
-                    font-size: 50px; 
-                    color:aliceblue;
-                    text-align: center;
-                    background-color:darkorchid;
+   /* hover effect code source: https://stackoverflow.com/questions/36410627/how-to-put-bootstrap-glow-used-in-the-form-control-css-class-on-a-div */
+        #subcontainer:hover{
+            border-color:  rgba(82, 236, 113, 0.8);
+            box-shadow: 0 3px 3px rgba(82, 236, 113, 0.8) inset, 0 0 8px rgba(82, 236, 113, 0.8);
+            outline: 0 none;
                 }
-                #op1{
-                    max-width: 100%;
-                    
-                }
-                #op2{
-                    max-width: 100%;
-                }
-                #op3{
-                    max-width: 100%;
-                }
-                #op4{
-                    max-width: 100%;
-                }
-                #headerText
-                {
-                    text-align: center;
-                    font-family:cursive;
-                    font-size:100px;
-                    font-weight: bold;
-                    color:aliceblue;
-                    background-color:darkorchid;
-                    /* background-image: url("Images/Gaming.jpeg");
-                    background-repeat: no-repeat;
-                    background-attachment: fixed;
-                    background-size: cover; */
-                }
-                #column3{
-                    font-family: fantasy;
-                    font-weight: bold;
-                    font-size: 50px; 
-                    color:aliceblue;
-                    text-align: center;
-                }
-                #subcontainer
-                {
-                    color:aliceblue; 
-                    background-color:darkorchid;
-                    font-size: 50px;
-                    font-family: 'Times New Roman', Times, serif;
-                    text-align: center;
-                    cursor: pointer;           
-                    
-                }
-                /* hover effect code source: https://stackoverflow.com/questions/36410627/how-to-put-bootstrap-glow-used-in-the-form-control-css-class-on-a-div */
-                #subcontainer:hover{
-                    border-color:  rgba(82, 236, 113, 0.8);
-                    box-shadow: 0 3px 3px rgba(82, 236, 113, 0.8) inset, 0 0 8px rgba(82, 236, 113, 0.8);
-                    outline: 0 none;
-                }
+    /* https://css-tricks.com/turning-a-fixed-size-object-into-a-responsive-element/ */
+    /* code source to set a breakpoint at a minimum width of zero pixels */
+    @media (min-width: 576px) {
+        :root {
+          --size-divisor: 2;
+        }
+      }
+      @media (min-width: 768px) {
+        :root {
+          --size-divisor: 1.5;
+        }
+      }
+      @media (min-width: 992px) { 
+        :root {
+          --size-divisor: 1;
+        }
+      }
+      @media (min-width: 1200px) { 
+        :root {
+          --size-divisor: .67;
+        }
+      }
+      /********************* end of source *******************************/
 
     
