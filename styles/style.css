@@ -1,4 +1,13 @@
-     .imgdiv{
+        .navbar
+            {
+               background-color: chocolate;
+            }
+        .navbar-brand
+            {
+            color:aquamarine;
+            font-family: cursive;
+            }
+        .imgdiv{
               position: relative;
               display: inline-block;
               width:150px;
@@ -11,26 +20,26 @@
               cursor: pointer;
           }
           
-          img{
+        img{
               width:120px;
               height: 120px;
               padding: 10px;;
           }
    
-          .hide{
+        .hide{
               padding: 10px;
               visibility: hidden;
           }
    
-          .match, .showimg{
+        .match, .showimg{
               visibility: visible !important;
           }
-          body {         
+        body {         
               background-repeat: no-repeat;
               background-attachment: fixed;
               background-size: cover;
           }
-          #column2{
+        #column2{
               font-family: fantasy;
               font-weight: bold;
               font-size: 50px; 
@@ -38,7 +47,7 @@
               text-align: center;
               background-color:darkorchid;
           }
-          p{
+        p{
             color:aliceblue;
             text-align: center;
             font-size: 30px;
@@ -212,5 +221,12 @@
         }
       }
       /********************* end of source *******************************/
+      footer{
+          text-align: center;
+          font-size:large;
+          font-family:'Times New Roman', Times, serif;
+          font-weight:bold;
+          color: aliceblue;
+      }
 
     

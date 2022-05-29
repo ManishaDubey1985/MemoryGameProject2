@@ -17,8 +17,8 @@
     <body id="quizBackgound">
          <!-- source1: https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse -->
     <!-- the navbar collapses into dropdown menu when the screen size is small -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark" style="background-color: chocolate;">
-        <a class="navbar-brand" style="color:aquamarine; font-family: cursive;" href="#">Fun Arena</a>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Fun Arena</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,16 +53,18 @@
       </nav>
       <!-- source1: end of nav bar -->
       <div class="container">
+        <header>
         <h1 class ="jumbotron" id="column2">The General Knowledge Quiz</h1>
+      </header>
       </div>
       <!-- source3: https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/ -->
-      <div class="panel">
-        <div class="result">
-        </div>
-        <div class="question-container" id="question">
+      <main class="panel">
+        <section class="result">
+        </section>
+        <section class="question-container" id="question">
             Question goes here.
-        </div>
-        <div class="option-container">
+        </section>
+        <section class="option-container">
             <button class="option" onclick="" id="op1" >option1</button>
       
             <button class="option" id="op2" >option2</button>
@@ -70,14 +72,19 @@
             <button class="option" id="op3">option3</button>
       
             <button class="option" id="op4">option4</button>
-        </div>
-        <div class="navigation">
+        </section>
+        <section class="navigation">
             <button class="evaluate">Evaluate</button>
             <button disabled class="previous" id="prev">Previous</button>
             <button class="next">Next</button>
-        </div>
-    </div>
+        </section>
+      </main>
     <!-- end of source3 -->
     <script src="script/quizscript.js"></script>
+    <br><br>
+    <footer>
+        <span>Author: Manisha Dubey</span><br>
+        <span><a href="https://github.com/ManishaDubey1985/MemoryGameProject2">My Github Repository</a></span>
+    </footer> 
     </body>
 </html>

@@ -2,13 +2,13 @@
 // code source: https://data-flair.training/blogs/flip-card-memory-game-in-javascript/
 availableImages=['Images/bean.jpg','Images/doraemon.jpg','Images/minion.jpg','Images/mouse.jpg','Images/noddy.jpg','Images/popeye.jpg',
 'Images/scooby.jpg','Images/shinchan.jpg','Images/bean.jpg','Images/doraemon.jpg','Images/minion.jpg','Images/mouse.jpg','Images/noddy.jpg',
-'Images/popeye.jpg','Images/scooby.jpg','Images/shinchan.jpg']
+'Images/popeye.jpg','Images/scooby.jpg','Images/shinchan.jpg'];
 // function to add sound effect on div click for boardgame
 function playaudio()
 {
 const maindiv = document.getElementById("boardgame"); 
 var audio = new Audio("Media/DivClick.wav");
-if (maindiv.click = true)
+if (maindiv.click == true)
 {
    audio.play();
 }
@@ -25,53 +25,58 @@ function start(){
        scorediv.removeChild(scorediv.lastChild);
     }
 
-    var row = document.createElement('div')
-    ImagesCopy= JSON.parse(JSON.stringify( availableImages))
+    var row = document.createElement('div');
+    ImagesCopy= JSON.parse(JSON.stringify( availableImages));
     for(let j=1;j<=16;j++){
         var div = document.createElement('div');
-        div.setAttribute('class','imgdiv')
-        var image = document.createElement('img')
+        div.setAttribute('class','imgdiv');
+        var image = document.createElement('img');
         randomImg = ImagesCopy.splice(Math.floor(Math.random() * ImagesCopy.length),1);
         image.setAttribute('src',randomImg);
-        image.setAttribute('class','hide')
-        div.appendChild(image)
+        image.setAttribute('class','hide');
+        div.appendChild(image);
         row.appendChild(div);
         
         if(j%4==0){
-            document.getElementById('boardgame').append(row)
-            row = document.createElement('div')
+            document.getElementById('boardgame').append(row);
+            row = document.createElement('div');
         }
 
         div.addEventListener('click',function(event){
             moves++;
-            let curr = event.currentTarget.children
-            let currImg = curr[0]
-           var currentlyshowing = document.getElementsByClassName('showimg');
+            let curr = event.currentTarget.children;
+            let currImg = curr[0];
+            var currentlyshowing = document.getElementsByClassName('showimg');
             currentlyshowing = document.getElementsByClassName('showimg');
             let flag=0;
             if(currentlyshowing.length >= 1){
                 for(let i=0;i<currentlyshowing.length;i++)
                 {
                     if(currentlyshowing[i].src != currImg.src)
+                    {
                     currentlyshowing[i].classList.remove('showimg');
-                    else{
-                        currentlyshowing[i].classList.add('match');
-                        currentlyshowing[i].style.backgroundColor="pink";  // added backgound change effect once match
-                        currImg.classList.add('match')
-                        currImg.style.backgroundColor="pink"; // added backgound change effect once match
-                        flag=1;
-                        
+                    }
+                    else 
+                    {
+                        currentlyshowing[i].classList.add('match');    
+                        currImg.classList.add('match');
+                        flag=1;  
+                        if(currentlyshowing[i].src == currImg.src & currentlyshowing[i].classList != currImg.classList)
+                        {
+                                currentlyshowing[i].style.backgroundColor="pink";  // added backgound change effect once match
+                                currImg.style.backgroundColor="pink"; // added backgound change effect once match
+
+                        }
                     }
                 }
             }
-
             if(document.getElementsByClassName('match').length==16){
-                alert("You won !!! ")
+                alert("You won !!! ");
                 let button = document.createElement('button');
                 button.setAttribute('class' , 'btn btn-warning');
-                let node= document.createTextNode("You won!!! Moves "+moves);
-                button.appendChild(node)
-                document.getElementById('score').appendChild(button) 
+                let node= document.createTextNode("You won!!! Moves "+ moves);
+                button.appendChild(node);
+                document.getElementById('score').appendChild(button);
             }
 
             if(flag==0)

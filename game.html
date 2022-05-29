@@ -20,8 +20,8 @@
 <body id="gameBackground">
     <!-- source: https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse -->
     <!-- the navbar collapses into dropdown menu when the screen size is small -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark" style="background-color: chocolate;">
-        <a class="navbar-brand" style="color:aquamarine; font-family: cursive;" href="#">Fun Arena</a>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Fun Arena</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,13 +55,17 @@
         </div>  
       </nav>
       <!-- end of nav bar -->
-    <div class="container">
+    <main class="container">
         <h1 class ="jumbotron" id="column2">The Memory game</h1>
         <button class="btn btn-success" onclick="start()">Start game</button><br><br>
-    <div id="score"></div>
+    <section id="score"></section>
  <!-- onclick event added -->
-    <div id="boardgame" onclick="playaudio()"></div>
-    </div>   
-    
+    <section id="boardgame" onclick="playaudio()"></section>
+    </main>   
+    <br><br>
+    <footer>
+        <span>Author: Manisha Dubey</span><br>
+        <span><a href="https://github.com/ManishaDubey1985/MemoryGameProject2">My Github Repository</a></span>
+    </footer>   
 </body>
 </html>
